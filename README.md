@@ -30,6 +30,8 @@ ActiveRecord Lite provides the following functionality:
 
 `#save`: updates or inserts object's entry depending if it already exists.
 
+`#delete`: deletes an object's entry in the database.
+
 `#belongs_to(name, options)`: takes a model name and an optional options hash to override defaults and creates a method called `#name`. The generated method returns instances of the model name whose id matches the foreign key held by the object calling the method.
 
 `#has_many(name, options)`: like `#belongs_to` but returns instances of the model name whose foreign_key matches the id of the object calling the method.

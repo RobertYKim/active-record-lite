@@ -236,5 +236,13 @@ describe SQLObject do
         human.save
       end
     end
+
+    describe '#delete' do
+      it 'deletes record from the DB' do
+        human = Human.find(4)
+        human.delete
+        expect(Human.all.count).to eq(3)
+      end
+    end
   end
 end

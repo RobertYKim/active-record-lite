@@ -35,3 +35,5 @@ ActiveRecord Lite provides the following functionality:
 `#has_many(name, options)`: like `#belongs_to` but returns instances of the model name whose foreign_key matches the id of the object calling the method.
 
 `#has_one_through(name, through_name, source_name)`: takes three arguments: the `name` of the target model class, the `through_name` of the intermediary class, and the `source_name` of the class calling the method, and creates a method called `#name`. The generated method returns an instance of `name` whose id matches the foreign key of the `through_name` object whose id matches the foreign key of the `source_name` object that is calling the method.
+
+`#has_many_through(name, through_name, source_name)`: takes three arguments: the `name` of the target model class, the `through_name` of the intermediary class, and the `source_name` of the class calling the method, and creates a method called `#name`. The generated method returns instances of `name` whose foreign key matches the id of the `through_name` object whose foreign key matches the id of the `source_name` object that is calling the method.

@@ -6,6 +6,8 @@ ActiveRecord Lite is an Object Relational Mapping (ORM) that translates rows of 
 
 ActiveRecord Lite provides the following functionality:
 
+##SQLObject class
+
 `::finalize`: creates setter and getter methods for all columns in the corresponding table using Rub's metaprogramming method `#define_method`.
 
 `::columns`: returns an array of all the columns in the corresponding table as symbols.
